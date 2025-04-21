@@ -13,3 +13,25 @@
 
     console.log(name, age, hairColor, eyeshadow, lipstick);
 }
+
+// Exercise 4: Mixed Object
+// Create an object called profile with explicit types for the following properties:
+// username – string
+// age – number
+// isPremiumUser – boolean
+// Type it directly using a type or inline. Then log the object.
+{
+    type Profile = {
+        username: string,
+        age: number,
+        isPremiumUser: boolean
+    }
+
+    let profileDari: Profile = {
+        username: "dari.pie",
+        age: 32,
+        isPremiumUser: false
+    }
+
+    console.log(profileDari);
+}
