@@ -57,3 +57,25 @@ console.log("Role:", currentUserRole);
 
 
 }
+
+{
+
+    // 1. Literal type for delivery status
+let status: "pending" | "shipped" | "delivered" = "pending";
+
+// 2. Union type for delivery ETA
+let deliveryETA: number | "unknown" = "unknown";
+
+// 3. Custom type for payment method
+type PaymentMethod = "credit" | "paypal" | "applePay";
+
+// 4. Use the type
+let chosenMethod: PaymentMethod = "paypal";
+
+// 5. Log everything
+console.log("Order Status:", status);
+console.log("ETA:", deliveryETA);
+console.log("Payment:", chosenMethod);
+
+
+}
